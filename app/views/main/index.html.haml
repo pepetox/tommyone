@@ -1,0 +1,27 @@
+%header
+  %section
+    %h1 Tomás Calleja
+    %article
+      %h2 Desarrollo Web
+    %article
+
+      #myCarousel.carousel.slide
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "4", "data-target" => "#myCarousel"}
+        / Carousel items
+        .carousel-inner
+          .active.item= image_tag("fotouno.jpg", height: '32px' )
+          .item= image_tag("fotodos.jpg", height: '32px')
+          .item= image_tag("fototres.jpg", height: '32px')
+          .item= image_tag("fotocuatro.jpg", height: '32px')
+          .item= image_tag("fotocinco.jpg", height: '32px' )
+
+        / Carousel nav
+        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} &lsaquo;
+        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} &rsaquo;
+      %p lñ´sdg´ñldfs´ñlsl´ñslksldf sdflgksldñkg´sñdlfkg sdlñfg ksdf gs fdglñskdf lgskd´fl kgs´ldñfg s´ñdf´sñf g´ñld fgs kfg´ñlg´lgfgkñlsdfkgs´ñlfkgsñlfksñgkslñ
+
