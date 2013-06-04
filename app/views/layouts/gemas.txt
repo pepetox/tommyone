@@ -1,0 +1,10 @@
+Configuracion de gemas
+
+gem 'twitter-bootstrap-rails'
+
+rails generate bootstrap:install static
+rails g bootstrap:layout application fluid
+
+rails g scaffold Post title:string description:text
+rake db:migrate
+rails g bootstrap:themed Posts

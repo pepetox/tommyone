@@ -28,19 +28,15 @@
           %link{:href => "http://fonts.googleapis.com/css?family=Clicker+Script", :rel => "stylesheet", :type => "text/css"}/
 
   %body
-    = render 'layouts/header'
+    /= render 'layouts/header'
     .container-fluid
-      .row-fluid#contenido
-        .span8
+      .row-fluid
+        .span8#contenido
           = bootstrap_flash
           = yield
         .span3
-          .well.sidebar-nav
-            %ul.nav.nav-list
-              %li.nav-header Sidebar
-              %li= link_to "Link1", "/path1"
-              %li= link_to "Link2", "/path2"
-              %li= link_to "Link3", "/path3"
+          /= render 'layouts/sidebar'
+
 
 
 
