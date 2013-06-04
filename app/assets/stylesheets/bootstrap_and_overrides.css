@@ -6,12 +6,15 @@
   =require twitter-bootstrap-static/fontawesome
   */
 
-  html{
-    font-family: 'Clicker Script', cursive !important;
+  html, h1, h2, p, body {
+    font-family: 'Irish Grover', cursive; !important;
   }
   body{
-    background-color:#000000 !important;
+
     color:#E4E4E4 !important;
+    background:url(fondo.jpg) no-repeat center top;
+    background-attachment:fixed;
+
   }
   #contenido {
     width: 70%;
@@ -24,9 +27,15 @@
   }
   #elemento {
   margin: calc();
-  padding: 5px;
-
+  padding: 1%;
   }
+  #elemento:hover{
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
   #parrilla {
     width: 100%;
     border: 5px solid #000;
