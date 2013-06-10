@@ -1,0 +1,14 @@
+es:
+  helpers:
+    actions: "Aciones"
+    links:
+      back: "Volver"
+      cancel: "Cancelar"
+      confirm: "¿Estas seguro?"
+      destroy: "borrar"
+      new: "nuevo"
+    titles:
+      edit: "Editar"
+      save: "Guardar"
+      new: "Nuevo"
+      delete: "borrar"

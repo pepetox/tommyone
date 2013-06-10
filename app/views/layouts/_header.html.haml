@@ -18,3 +18,4 @@
               - @proyectos.each do |proyecto|
                 %li= link_to proyecto.nombre, proyecto
           %li= link_to "Wikirol", "http://wikirol.dominarelmundo.org"
+          %li= render 'layouts/locale_selector'

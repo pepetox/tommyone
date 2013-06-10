@@ -1,20 +1,37 @@
-%header
-  %section
-    %h1 Pepetox
-    %article
-      %h2 Desarrollo Web con Ruby on Rails
-    %article
-      %p Soy Tomás Calleja (Pepetox) y soy un enamorado de ruby,
-      .row-fluid#parrilla
-        .span3#elemento
-          = image_tag("fondo.jpg", height: '100px')
-        .span3#elemento
-          = image_tag("fondo.jpg", height: '100px')
-        .span3#elemento
-          = image_tag("fotouno.jpg", height: '100px')
-        .span3#elemento
-          = image_tag("fotodos.jpg", height: '100px')
+.container-fluid
+  .row-fluid
+    .span6#contenido
+      = bootstrap_flash
+      %header
+        %section#cabezera
+          %h1 Pepetox
+          %article
+            %h2 Desarrollo Web con Ruby on Rails
+  .row-fluid
+    .span6.offset5#contenido
+      = bootstrap_flash
 
+      %section#proyectos
+        %h2#tituloproyectos
+          = t("Ultimos proyectos")
+        .row-fluid#parrilla
+          .span3.elemento#ele1
+            = image_tag("fondo.jpg", height: '100px')
+          .span3.elemento#ele2
+            = image_tag("fondotren.jpg", height: '100px')
+          .span3.elemento#ele3
+            = image_tag("fondoodaiba.jpg", height: '100px')
+          .span3.elemento#ele4
+            = image_tag("fotodos.jpg", height: '100px')
+        .row-fluid#descripcion
+          %p.infoproyecto#texto1
+            Esta foto es una puesta de sol tomada en Almeria
+          %p.infoproyecto#texto2
+            Foto a un tren de la linea yamanote un día que nevaba
+          %p.infoproyecto#texto3
+            Foto al puente arcoiris que une Tokyo con Odaiba
+          %p.infoproyecto#texto4
+            Puesta de sol en miyajima
 
 
 

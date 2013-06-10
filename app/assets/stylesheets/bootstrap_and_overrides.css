@@ -7,41 +7,63 @@
   */
 
   html, h1, h2, p, body {
-    font-family: 'Irish Grover', cursive; !important;
+    font-family: 'Irish Grover', cursive, !important;
   }
   body{
-
     color:#E4E4E4 !important;
-    background:url(fondo.jpg) no-repeat center top;
+    background:url(fondotambo.jpg) no-repeat center top;
     background-attachment:fixed;
+    max-width: 100%;
+    background-size: 100%;
+  }
+  #cabezera{
+    padding: 3%;
+  }
 
-  }
-  #contenido {
-    width: 70%;
-    margin: 1% 14%;
 
-  }
-  @mixin default_font {
-  font-family: 'Clicker Script', "Lucida Grande", sans-serif;
-  font-weight: 400;
-  }
-  #elemento {
+
+  .elemento {
   margin: calc();
   padding: 1%;
   }
-  #elemento:hover{
+  .elemento:hover{
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
     -o-transform: scale(1.5);
     transform: scale(1.5);
+  }
+  .infoproyecto{
+    text-align: center;
+    font-size: 5em;
+    margin-top: 25%;
+
   }
 
   #parrilla {
     width: 100%;
     border: 5px solid #000;
     padding: 2%;
+    position: relative;
+
+
   }
-  #myCarousel {
-    width: 60%;
-    margin: 0 auto;
+  #descripcion{
+    height: 600px;
+    width: 105%;
+    border: 1px solid #000;
+  }
+  #proyectos{
+    text-align: center;
+    margin: 0% 2% 3% 4%;
+
+  }
+  #tituloproyectos{
+    padding-bottom: 5%;
+
+  }
+  #ele1{
+
+  }
+  #texto1, #texto2, #texto3, #texto4{
+    display: none;
   }

@@ -14,3 +14,30 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 
+$(document).ready(function() {
+  $('#ele1').on('click', function() {
+    $('#texto1').show();
+    $('#texto2').hide();
+    $('#texto3').hide();
+    $('#texto4').hide();
+
+  });
+  $('#ele2').on('click', function() {
+    $('#texto1').hide();
+    $('#texto2').show();
+    $('#texto3').hide();
+    $('#texto4').hide();
+  });
+  $('#ele3').on('click', function() {
+    $('#texto1').hide();
+    $('#texto2').hide();
+    $('#texto3').show();
+    $('#texto4').hide();
+  });
+  $('#ele4').on('click', function() {
+    $('#texto1').hide();
+    $('#texto2').hide();
+    $('#texto3').hide();
+    $('#texto4').show();
+  });
+});
